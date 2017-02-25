@@ -1,0 +1,278 @@
+/************ 
+Start Navbar
+*************/
+header nav{
+    position: fixed;
+    z-index: 999
+}
+header nav .brand-logo img {
+    margin: 8px 0 0 10px;
+    opacity: .9;
+    display: inline-block
+}
+
+header nav .brand-logo span{
+    position: relative;
+    display: inline-block;
+    top:-15px
+}
+/***********
+End  Navbar
+************/
+
+
+/************
+Start Slider
+*************/
+main .slider{
+    height: 600px !important
+}
+
+main .slider .slides{
+    height: 100% !important
+}
+
+main .slider .indicators{
+    bottom: 60px;
+    z-index: 10;
+}
+
+main .slider .indicators .indicator-item.active {
+    background: #37474f
+}
+
+main .slider h3{
+    color: #ffff00 
+}
+
+main .slider h5{
+    color: #ffd600 
+}
+/***********
+End Slider 
+***********/
+
+
+/************
+Start About
+*************/
+.about{
+    padding: 30px 0 ;
+}
+/********** 
+End About
+**********/
+
+
+
+/**************
+Start services
+***************/
+.services{
+    background: #eeeeee;
+    padding: 30px 0  ;
+}
+
+.services .item i {
+    width: 120px;
+    height: 120px;
+    background: #a1887f ;
+    border-radius:50%;
+    transition: all .3s ease-in-out;
+}
+
+.services .item  .code{
+    padding: 20px 0 0 ;
+ }
+.services .item  .code:hover{
+   background: #f4511e ;
+    color: #fff;
+ }
+
+.services .item  .desk{
+    padding: 30px 0 0 0
+ }
+.services .item  .desk:hover{
+   background: #7b1fa2;
+    color: #fff;
+ }
+
+.services .item  .mobile{
+    padding:20px 0 0 0
+ }
+.services .item  .mobile:hover{
+   background: #01579b;
+    color: #fff;
+ }
+/************
+End services
+*************/
+
+
+/**********
+Start Work
+***********/
+.work{
+    width: 100%;
+    padding: 30px 0 
+}
+
+.work .btn{
+    width: 100%;
+    margin: 10px 0;
+}
+.work .item {
+    width: 32.5%;
+    height: auto;
+    float: left;
+    margin: 5px  0 0 ;
+    margin-right: 2px
+}
+.work .item img{
+    width: 100%;
+    height: 300px;
+    background: #fff;
+}
+
+.work .item p{
+    margin-top: 0;
+    margin-bottom: 20px
+}
+/*********
+ End Work
+**********/
+
+
+/**********
+Start Team
+***********/
+.team .parallax-container {
+    color: #fff;
+    height: auto;
+        
+}
+
+#team .row .col img{
+    transition: all .5s ease-in-out ;   
+    width: 160px;
+    height: 160px;
+}
+
+#team .row .col img:hover{
+    transform: scale(1.2,1.2);
+
+}
+
+.team .parallax-container h6{
+    margin: 10px 0 20px ;
+}
+/**********
+End Team
+***********/
+
+
+
+/****************
+Start Testamonial
+*****************/
+.testimonial{
+    padding: 30px 0;
+}
+
+.testimonial .item{
+    transition: all .5s ease-in-out ; 
+
+}
+.testimonial .item:hover{
+    transform: scale(1.1,1.1);
+}
+.testimonial .item img{
+    width: 60px;
+    height: 60px    
+}
+
+.testimonial .item h6{
+    font-weight: bold
+}
+/****************
+End Testamonial
+*****************/
+
+/*************
+Start Contact
+**************/
+.contact{
+    background: #eeeeee;
+    padding: 30px 0;    
+}
+
+.contact h2{
+    margin-bottom: 60px
+}
+/**********
+End Contact
+***********/
+
+
+/*******************
+Start Loading Screen
+********************/
+.loading-screen{
+    background: #37474f ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+
+.preloader-wrapper {
+    left:45%;
+    top:45%;
+}
+/*******************
+End Loading Screen
+********************/
+
+
+/*******************
+********************
+Start Media Queries 
+********************
+********************/
+
+
+/**************
+Tablet Devices  
+***************/
+@media (max-width:992px){
+    /* Our Work in Tablet  */
+    .work .item {
+        width: 49%;
+        margin-top: 10px
+    }
+    
+    #team .row .col img{
+        width: 120px;
+        height: 120px
+    }
+}
+
+/**************
+Mobile Devices  
+***************/
+
+@media (max-width:600px){
+    /* Our Work in Mobile  */
+    .work .item {
+        width: 100%;        
+    }
+    
+    /*Footer in Mobile */
+    footer .btn{
+        width: 100%
+    }
+}
